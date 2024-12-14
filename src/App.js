@@ -27,12 +27,6 @@ function App() {
             <Highlight />
           </>
         } />
-        <Route path="/MainSection" element={<MainSection />} />
-        <Route path="/ServicesSection" element={<ServicesSection />} />
-        <Route path="/Skills" element={<Skills />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/Testimonials" element={<Testimonials />} />
-        <Route path="/Contact" element={<Contact />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
