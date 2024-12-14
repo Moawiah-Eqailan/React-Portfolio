@@ -1,0 +1,1081 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/************ Header Section *************/
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 50px;
+}
+
+.logo {
+    color: #3a6cf4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navigation a:hover {
+    color: #601cfc;
+}
+
+/************ Main Section *************/
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/src/assets/images/backgroundLogo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #ffffff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding:
+        0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+
+}
+/************ Social Media Icons *************/
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.5s ease;
+}
+
+.social-icons a:hover {
+    color: #0a49f6;
+    transform: scale(1.1);
+
+}
+
+
+/************ Services Section *************/
+
+.cards {
+    background-color: #f0f0f0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/************ Skills Section *************/
+#Skills {
+    background-color: #000016;
+}
+
+/************ Projects Section *************/
+
+#Projects {
+    background-color: #f0f0f0;
+}
+
+#Projects .contact {
+    margin-top: 30px;
+}
+
+#Projects .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Projects-card {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+.Projects-card:hover {
+    transform: scale(1.1);
+}
+
+.Projects-img img {
+    width: 100%;
+}
+
+.Projects-img img:hover {
+    opacity: 0.9;
+}
+
+.Projects-info {
+    padding: 1em;
+}
+
+.Projects-category {
+    font-size: 0.8em;
+    color: #000000;
+}
+
+.Projects-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.Project-presentation {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.Project-presentation:hover {
+    color: #601cfc;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    /* background: #fff; */
+    /* border-radius: 10px; */
+    padding: 25px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.popup-content video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    background: #ff4b4b;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Show-video-button a{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.Show-video-button a:hover{
+    color: #601cfc;
+}
+
+
+/************ Testimonials Section *************/
+#Testimonials {
+    background-color: #000016;
+}
+
+/************ Highlight Section *************/
+#Highlight {
+    background-color: #f0f0f0;
+}
+
+#Highlight .contact {
+    margin-top: 30px;
+}
+
+/************ Contact Card Section *************/
+.card-contact {
+    background-color: #000016;
+}
+
+.card-contact .icon {
+    font-size: 4em;
+}
+
+
+.card-contact .info h3 {
+    color: #000000;
+}
+
+.card-contact .info p {
+    font-size: 1.2em;
+}
+
+/************ Footer Section *************/
+
+.footer {
+    background-color: #000016;
+    color: #ffffff;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#footer p {
+    font-size: 1em;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+#footer .social-icons a {
+    font-size: 1em;
+    padding: 0 12px 0 0;
+}
+.contact-info {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #3a6cf4; 
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: none;
+}
+
+
+/************ Contact Form *************/
+
+.contact-form {
+    background-color: #000016;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+    background-color: #000016;
+    color: white;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0a49f6;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/************ Responsive Media Queries *************/
+
+@media (max-width:1024px) {
+    header {
+        padding: 12px 20px;
+
+
+    }
+
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(https://i.pinimg.com/564x/34/d9/18/34d918230e2f20e45770dabf1e973877.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .navigation a {
+        padding-left: 1em;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+
+    }
+
+    .main-content h3 {
+        font-size: 1.5em;
+
+    }
+
+    .Contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .form-input {
+        font-size: 1em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+    }
+    header {
+        padding: 12px 20px;
+        display: block;
+        text-align: center;
+    }
+
+    header .logo {
+        color: #000016;
+    }
+
+    header .navigation {
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(https://i.pinimg.com/564x/34/d9/18/34d918230e2f20e45770dabf1e973877.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+
+    body {
+        font-size: 10px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h2 {
+        font-size: 1.4em;
+    }
+
+    #Services .card  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    #Services .title  {
+        font-size: 20px;
+       }
+       
+       #Services .card  {
+           flex: 1 1 calc(50% - 16px); 
+           box-sizing: border-box; 
+       }
+   
+       #Services .card ,.info{
+           width: 90%; 
+           height: auto;
+           gap: 2px;
+           
+       }   
+       #Services .info{
+           font-size: 10px;
+           
+       }
+   
+
+    #Skills .title  {
+     font-size: 20px;
+    }
+    
+    
+    #Skills .card ,.info{
+        width: 90%; 
+        height: auto;
+        gap: 2px;
+        
+    }   
+    #Skills .card {
+        flex: 1 1 calc(50% - 16px);
+        box-sizing: border-box;
+        text-align: center;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    
+    #Skills .info {
+        font-size: 14px; 
+        text-align: center; 
+        margin-top: 8px; 
+    }
+    #Projects .title  {
+        font-size: 20px;
+       }
+        #Projects .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+    
+        #Projects .Projects-card {
+            flex: 1 1 calc(50% - 16px); 
+            box-sizing: border-box; 
+        }
+    
+        #Projects .Projects-img img {
+            width: 100%; 
+            height: auto;
+        }
+    }
+    
+    #Highlight .title  {
+        font-size: 20px;
+       }
+       
+       
+       #Highlight .card ,.info{
+           width: 90%; 
+           height: auto;
+           gap: 2px;
+           
+       }   
+       #Highlight .card {
+           flex: 1 1 calc(50% - 16px);
+           box-sizing: border-box;
+           text-align: center;
+           display: flex; 
+           flex-direction: column; 
+           justify-content: center; 
+           align-items: center; 
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+       }
+       
+       #Highlight .info {
+           font-size: 14px; 
+           text-align: center; 
+           margin-top: 8px; 
+       }
+
+
+
+
+       #Testimonials .title  {
+        font-size: 20px;
+       }
+       
+       
+       #Testimonials .card ,.info{
+           width: 90%; 
+           height: auto;
+           gap: 2px;
+           
+       }   
+       #Testimonials .card {
+           flex: 1 1 calc(50% - 16px);
+           box-sizing: border-box;
+           text-align: center;
+           display: flex; 
+           flex-direction: column; 
+           justify-content: center; 
+           align-items: center; 
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+       }
+       
+       #Testimonials .info {
+           font-size: 14px; 
+           text-align: center; 
+           margin-top: 8px; 
+       }
+
+
+
+@media (max-width:641px) {
+    header {
+        padding: 12px 20px;
+        display: block;
+        text-align: center;
+    }
+
+    header .logo {
+        color: #000016;
+    }
+
+    header .navigation {
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(https://i.pinimg.com/564x/34/d9/18/34d918230e2f20e45770dabf1e973877.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+
+    body {
+        font-size: 10px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h2 {
+        font-size: 1.4em;
+    }
+
+
+
+    #Services .card  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    #Services .title  {
+        font-size: 20px;
+       }
+       
+       #Services .card  {
+           flex: 1 1 calc(50% - 16px); 
+           box-sizing: border-box; 
+       }
+   
+       #Services .card ,.info{
+           width: 90%; 
+           height: auto;
+           gap: 2px;
+           
+       }   
+       #Services .info{
+           font-size: 10px;
+           
+       }
+   
+
+    #Skills .title  {
+     font-size: 20px;
+    }
+    
+    
+    #Skills .card ,.info{
+        width: 90%; 
+        height: auto;
+        gap: 2px;
+        
+    }  
+    #Skills .card {
+        flex: 1 1 calc(50% - 16px);
+        box-sizing: border-box;
+        text-align: center;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    
+    #Skills .info {
+        font-size: 14px; 
+        text-align: center; 
+        margin-top: 8px; 
+    }
+    
+
+
+   
+        #Projects .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+    
+        #Projects .Projects-card {
+            flex: 1 1 calc(50% - 16px); 
+            box-sizing: border-box; 
+        }
+    
+        #Projects .Projects-img img {
+            width: 100%; 
+            height: auto;
+        }
+
+
+
+
+
+
+
+        #Highlight .title  {
+            font-size: 20px;
+           }
+           
+           
+           #Highlight .card ,.info{
+               width: 90%; 
+               height: auto;
+               gap: 2px;
+               
+           }   
+           #Highlight .card {
+               flex: 1 1 calc(50% - 16px);
+               box-sizing: border-box;
+               text-align: center;
+               display: flex; 
+               flex-direction: column; 
+               justify-content: center; 
+               align-items: center; 
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+           }
+           
+           #Highlight .info {
+               font-size: 14px; 
+               text-align: center; 
+               margin-top: 8px; 
+           }
+
+
+
+
+           #Testimonials .title  {
+            font-size: 20px;
+           }
+           
+           
+           #Testimonials .card ,.info{
+               width: 90%; 
+               height: auto;
+               gap: 2px;
+               
+           }   
+           #Testimonials .card {
+               flex: 1 1 calc(50% - 16px);
+               box-sizing: border-box;
+               text-align: center;
+               display: flex; 
+               flex-direction: column; 
+               justify-content: center; 
+               align-items: center; 
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+           }
+           
+           #Testimonials .info {
+               font-size: 14px; 
+               text-align: center; 
+               margin-top: 8px; 
+           }
+
+
+
+           .footer-title {
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        
+        #footer p {
+            font-size: 1em;
+        }
+        
+        .footer-title span {
+            color: #3a6cf4;
+        }
+        
+        #footer .social-icons a {
+            font-size: 1em;
+            padding: 0 12px 0 0;
+        }
+        .contact-info {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 8px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .contact-info a {
+            color: #3a6cf4; 
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: none;
+        }
+
+
+
+
+
+
+    }
+    
+  
+
+@media (max-width:365px) {
+    header {
+        padding: 12px 20px;
+        display: block;
+        text-align: center;
+
+    }
+
+    header .logo {
+        color: #000016;
+    }
+
+    header .navigation {
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(https://i.pinimg.com/564x/34/d9/18/34d918230e2f20e45770dabf1e973877.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+
+    body {
+        font-size: 7px;
+    }
+
+
+    #Services .card  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    #Services .title  {
+        font-size: 20px;
+       }
+       
+       #Services .card  {
+           flex: 1 1 calc(50% - 16px); 
+           box-sizing: border-box; 
+       }
+   
+       #Services .card ,.info{
+           width: 90%; 
+           height: auto;
+           gap: 2px;
+           
+       }   
+       #Services .info{
+           font-size: 10px;
+           
+       }
+   
+
+    #Skills .title  {
+     font-size: 20px;
+    }
+    
+    
+    #Skills .card ,.info{
+        width: 90%; 
+        height: auto;
+        gap: 2px;
+        
+    }  
+    #Skills .card {
+        flex: 1 1 calc(50% - 16px);
+        box-sizing: border-box;
+        text-align: center;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    
+    #Skills .info {
+        font-size: 14px; 
+        text-align: center; 
+        margin-top: 8px; 
+    }
+    
+
+
+   
+        #Projects .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+    
+        #Projects .Projects-card {
+            flex: 1 1 calc(50% - 16px); 
+            box-sizing: border-box; 
+        }
+    
+        #Projects .Projects-img img {
+            width: 100%; 
+            height: auto;
+        }
+
+
+
+
+
+
+
+        #Highlight .title  {
+            font-size: 20px;
+           }
+           
+           
+           #Highlight .card ,.info{
+               width: 90%; 
+               height: auto;
+               gap: 2px;
+               
+           }   
+           #Highlight .card {
+               flex: 1 1 calc(50% - 16px);
+               box-sizing: border-box;
+               text-align: center;
+               display: flex; 
+               flex-direction: column; 
+               justify-content: center; 
+               align-items: center; 
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+           }
+           
+           #Highlight .info {
+               font-size: 14px; 
+               text-align: center; 
+               margin-top: 8px; 
+           }
+
+
+
+
+           #Testimonials .title  {
+            font-size: 20px;
+           }
+           
+           
+           #Testimonials .card ,.info{
+               width: 90%; 
+               height: auto;
+               gap: 2px;
+               
+           }   
+           #Testimonials .card {
+               flex: 1 1 calc(50% - 16px);
+               box-sizing: border-box;
+               text-align: center;
+               display: flex; 
+               flex-direction: column; 
+               justify-content: center; 
+               align-items: center; 
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+           }
+           
+           #Testimonials .info {
+               font-size: 14px; 
+               text-align: center; 
+               margin-top: 8px; 
+           }
+
+
+           .footer-title {
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        
+        #footer p {
+            font-size: 1em;
+        }
+        
+        .footer-title span {
+            color: #3a6cf4;
+        }
+        
+        #footer .social-icons a {
+            font-size: 1em;
+            padding: 0 12px 0 0;
+        }
+        .contact-info {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 8px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .contact-info a {
+            color: #3a6cf4; 
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: none;
+        }
+}
+
+
+
+
