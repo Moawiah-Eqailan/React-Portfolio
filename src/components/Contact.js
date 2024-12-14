@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import Swal from "sweetalert2";
 import emailjs from '@emailjs/browser';
 import { Link } from "react-router-dom";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 
 const Contact = () => {
@@ -148,9 +147,12 @@ const Contact = () => {
 >
     Back To Home
 </Link> */}
- <p><FaPhone className="social-icon" /> +962788136963</p>
-         
-         <p><FaEnvelope className="social-icon" />info@GoMovies.com</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
         </section>   
         
     );

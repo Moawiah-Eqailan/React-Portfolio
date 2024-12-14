@@ -4,7 +4,85 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.dark-mode {
+    background-color: #000016; 
+  }
+  
 
+  
+.dark-mode .cards {
+    background-color: #000016; 
+}
+
+.dark-mode #Services .card {
+    background-color: #f0f0f0; 
+}
+.dark-mode #Skills  {
+    background-color: #f0f0f0; 
+}
+.dark-mode #Projects  {
+    background-color: #000016; 
+}
+.dark-mode #Testimonials  {
+    background-color: #f0f0f0; 
+}
+.dark-mode #Highlight  {
+    background-color: #000016; 
+}
+.dark-mode #Contact .contact-form {
+    background-color: #f0f0f0; 
+}
+
+
+
+  
+  .dark-mode .header {
+    background-color: #fff; 
+    color: #000016; 
+  }
+  
+  .dark-mode .footer {
+    background-color: #f0f0f0; 
+    color: #000016; 
+  }
+  
+  .dark-mode .contact-info p{
+    background-color: #f0f0f0; 
+    color: #000016; 
+  }
+  
+
+
+  .dark-mode-toggle {
+    position: absolute; 
+    left: 340px; 
+    padding: 10px;
+    background-color: transparent; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; 
+    font-size: 24px; 
+  }
+  
+ 
+  .dark-mode-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .fa-sun, .fa-moon {
+    transition: color 0.3s ease; 
+  }
+  
+  .dark-mode .fa-sun {
+    color: #ffcc00; 
+  }
+  
+  .dark-mode .fa-moon {
+    color: #bbbbbb; 
+  }
+  
+  
 /************ Header Section *************/
 
 header {
@@ -578,8 +656,7 @@ section {
             width: 100%; 
             height: auto;
         }
-    }
-    
+           
     #Highlight .title  {
         font-size: 20px;
        }
@@ -638,234 +715,466 @@ section {
            text-align: center; 
            margin-top: 8px; 
        }
-
-
-
-@media (max-width:641px) {
-    header {
-        padding: 12px 20px;
-        display: block;
-        text-align: center;
     }
-
-    header .logo {
-        color: #000016;
-    }
-
-    header .navigation {
-        padding: 10px;
-    }
-
-    .main {
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        background: url(https://i.pinimg.com/564x/34/d9/18/34d918230e2f20e45770dabf1e973877.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-
-
-    body {
-        font-size: 10px;
-    }
-
-    .main-content h2 {
-        font-size: 0.8em;
-    }
-
-    .main-content h2 {
-        font-size: 1.4em;
-    }
+ 
 
 
 
-    #Services .card  {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    #Services .title  {
-        font-size: 20px;
-       }
-       
-       #Services .card  {
-           flex: 1 1 calc(50% - 16px); 
-           box-sizing: border-box; 
-       }
    
-       #Services .card ,.info{
-           width: 90%; 
-           height: auto;
-           gap: 2px;
-           
-       }   
-       #Services .info{
-           font-size: 10px;
-           
-       }
-   
-
-    #Skills .title  {
-     font-size: 20px;
-    }
     
-    
-    #Skills .card ,.info{
-        width: 90%; 
-        height: auto;
-        gap: 2px;
+        @media (max-width:641px) {
+            header {
+                padding: 12px 20px;
+                display: block;
+                text-align: center;
+            }
         
-    }  
-    #Skills .card {
-        flex: 1 1 calc(50% - 16px);
-        box-sizing: border-box;
-        text-align: center;
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    }
-    
-    #Skills .info {
-        font-size: 14px; 
-        text-align: center; 
-        margin-top: 8px; 
-    }
-    
-
-
-   
-        #Projects .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 16px;
-        }
-    
-        #Projects .Projects-card {
-            flex: 1 1 calc(50% - 16px); 
-            box-sizing: border-box; 
-        }
-    
-        #Projects .Projects-img img {
-            width: 100%; 
-            height: auto;
-        }
-
-
-
-
-
-
-
-        #Highlight .title  {
-            font-size: 20px;
-           }
-           
-           
-           #Highlight .card ,.info{
-               width: 90%; 
-               height: auto;
-               gap: 2px;
+            header .logo {
+                color: #000016;
+            }
+        
+            header .navigation {
+                padding: 10px;
+            }
+        
+            .main {
+                width: 100%;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                background: url(https://i.pinimg.com/564x/34/d9/18/34d918230e2f20e45770dabf1e973877.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        
+        
+            body {
+                font-size: 10px;
+            }
+        
+            .main-content h2 {
+                font-size: 0.8em;
+            }
+        
+            .main-content h2 {
+                font-size: 1.4em;
+            }
+        
+        
+        
+            #Services .card  {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+            }
+        
+            #Services .title  {
+                font-size: 20px;
+               }
                
-           }   
-           #Highlight .card {
-               flex: 1 1 calc(50% - 16px);
-               box-sizing: border-box;
-               text-align: center;
-               display: flex; 
-               flex-direction: column; 
-               justify-content: center; 
-               align-items: center; 
-               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-           }
+               #Services .card  {
+                   flex: 1 1 calc(50% - 16px); 
+                   box-sizing: border-box; 
+               }
            
-           #Highlight .info {
-               font-size: 14px; 
-               text-align: center; 
-               margin-top: 8px; 
-           }
-
-
-
-
-           #Testimonials .title  {
-            font-size: 20px;
-           }
+               #Services .card ,.info{
+                   width: 90%; 
+                   height: auto;
+                   gap: 2px;
+                   
+               }   
+               #Services .info{
+                   font-size: 10px;
+                   
+               }
            
+        
+            #Skills .title  {
+             font-size: 20px;
+            }
+            
+            
+            #Skills .card ,.info{
+                width: 90%; 
+                height: auto;
+                gap: 2px;
+                
+            }  
+            #Skills .card {
+                flex: 1 1 calc(50% - 16px);
+                box-sizing: border-box;
+                text-align: center;
+                display: flex; 
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center; 
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            }
+            
+            #Skills .info {
+                font-size: 14px; 
+                text-align: center; 
+                margin-top: 8px; 
+            }
+            
+        
+        
            
-           #Testimonials .card ,.info{
-               width: 90%; 
-               height: auto;
-               gap: 2px;
+                #Projects .content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 16px;
+                }
+            
+                #Projects .Projects-card {
+                    flex: 1 1 calc(50% - 16px); 
+                    box-sizing: border-box; 
+                }
+            
+                #Projects .Projects-img img {
+                    width: 100%; 
+                    height: auto;
+                }
+        
+        
+        
+        
+        
+        
+        
+                #Highlight .title  {
+                    font-size: 20px;
+                   }
+                   
+                   
+                   #Highlight .card ,.info{
+                       width: 90%; 
+                       height: auto;
+                       gap: 2px;
+                       
+                   }   
+                   #Highlight .card {
+                       flex: 1 1 calc(50% - 16px);
+                       box-sizing: border-box;
+                       text-align: center;
+                       display: flex; 
+                       flex-direction: column; 
+                       justify-content: center; 
+                       align-items: center; 
+                       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                   }
+                   
+                   #Highlight .info {
+                       font-size: 14px; 
+                       text-align: center; 
+                       margin-top: 8px; 
+                   }
+        
+        
+        
+        
+                   #Testimonials .title  {
+                    font-size: 20px;
+                   }
+                   
+                   
+                   #Testimonials .card ,.info{
+                       width: 90%; 
+                       height: auto;
+                       gap: 2px;
+                       
+                   }   
+                   #Testimonials .card {
+                       flex: 1 1 calc(50% - 16px);
+                       box-sizing: border-box;
+                       text-align: center;
+                       display: flex; 
+                       flex-direction: column; 
+                       justify-content: center; 
+                       align-items: center; 
+                       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                   }
+                   
+                   #Testimonials .info {
+                       font-size: 14px; 
+                       text-align: center; 
+                       margin-top: 8px; 
+                   }
+        
+        
+        
+                   .footer-title {
+                    font-size: 1.3em;
+                    font-weight: 600;
+                }
+                
+                #footer p {
+                    font-size: 1em;
+                }
+                
+                .footer-title span {
+                    color: #3a6cf4;
+                }
+                
+                #footer .social-icons a {
+                    font-size: 1em;
+                    padding: 0 12px 0 0;
+                }
+                .contact-info {
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 8px;
+                    color: #fff;
+                    text-align: center;
+                }
+                
+                .contact-info a {
+                    color: #3a6cf4; 
+                    text-decoration: none;
+                }
+                
+                .contact-info a:hover {
+                    text-decoration: none;
+                }
+        
+        
+        
+        
+        
+        
+            }
+
+
+            @media (max-width:470px) {
+                header {
+                    padding: 12px 20px;
+                    display: block;
+                    text-align: center;
+                }
+            
+                header .logo {
+                    color: #000016;
+                }
+            
+                header .navigation {
+                    padding: 10px;
+                }
+            
+                .main {
+                    width: 100%;
+                    min-height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    background: url(https://i.pinimg.com/564x/34/d9/18/34d918230e2f20e45770dabf1e973877.jpg) no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: fixed;
+                }
+            
+            
+                body {
+                    font-size: 10px;
+                }
+            
+                .main-content h2 {
+                    font-size: 0.8em;
+                }
+            
+                .main-content h2 {
+                    font-size: 1.4em;
+                }
+            
+            
+            
+                #Services .card  {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 16px;
+                }
+            
+                #Services .title  {
+                    font-size: 20px;
+                   }
+                   
+                   #Services .card  {
+                       flex: 1 1 calc(50% - 16px); 
+                       box-sizing: border-box; 
+                   }
                
-           }   
-           #Testimonials .card {
-               flex: 1 1 calc(50% - 16px);
-               box-sizing: border-box;
-               text-align: center;
-               display: flex; 
-               flex-direction: column; 
-               justify-content: center; 
-               align-items: center; 
-               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-           }
-           
-           #Testimonials .info {
-               font-size: 14px; 
-               text-align: center; 
-               margin-top: 8px; 
-           }
-
-
-
-           .footer-title {
-            font-size: 1.3em;
-            font-weight: 600;
-        }
-        
-        #footer p {
-            font-size: 1em;
-        }
-        
-        .footer-title span {
-            color: #3a6cf4;
-        }
-        
-        #footer .social-icons a {
-            font-size: 1em;
-            padding: 0 12px 0 0;
-        }
-        .contact-info {
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 8px;
-            color: #fff;
-            text-align: center;
-        }
-        
-        .contact-info a {
-            color: #3a6cf4; 
-            text-decoration: none;
-        }
-        
-        .contact-info a:hover {
-            text-decoration: none;
-        }
-
-
-
-
-
-
-    }
-    
-  
+                   #Services .card ,.info{
+                       width: 90%; 
+                       height: auto;
+                       gap: 2px;
+                       
+                   }   
+                   #Services .info{
+                       font-size: 10px;
+                       
+                   }
+               
+            
+                #Skills .title  {
+                 font-size: 20px;
+                }
+                
+                
+                #Skills .card ,.info{
+                    width: 90%; 
+                    height: auto;
+                    gap: 2px;
+                    
+                }  
+                #Skills .card {
+                    flex: 1 1 calc(50% - 16px);
+                    box-sizing: border-box;
+                    text-align: center;
+                    display: flex; 
+                    flex-direction: column; 
+                    justify-content: center; 
+                    align-items: center; 
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                }
+                
+                #Skills .info {
+                    font-size: 14px; 
+                    text-align: center; 
+                    margin-top: 8px; 
+                }
+                
+            
+            
+               
+                    #Projects .content {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 16px;
+                    }
+                
+                    #Projects .Projects-card {
+                        flex: 1 1 calc(50% - 16px); 
+                        box-sizing: border-box; 
+                    }
+                
+                    #Projects .Projects-img img {
+                        width: 100%; 
+                        height: auto;
+                    }
+            
+            
+            
+            
+            
+            
+            
+                    #Highlight .title  {
+                        font-size: 20px;
+                       }
+                       
+                       
+                       #Highlight .card ,.info{
+                           width: 90%; 
+                           height: auto;
+                           gap: 2px;
+                           
+                       }   
+                       #Highlight .card {
+                           flex: 1 1 calc(50% - 16px);
+                           box-sizing: border-box;
+                           text-align: center;
+                           display: flex; 
+                           flex-direction: column; 
+                           justify-content: center; 
+                           align-items: center; 
+                           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                       }
+                       
+                       #Highlight .info {
+                           font-size: 14px; 
+                           text-align: center; 
+                           margin-top: 8px; 
+                       }
+            
+            
+            
+            
+                       #Testimonials .title  {
+                        font-size: 20px;
+                       }
+                       
+                       
+                       #Testimonials .card ,.info{
+                           width: 90%; 
+                           height: auto;
+                           gap: 2px;
+                           
+                       }   
+                       #Testimonials .card {
+                           flex: 1 1 calc(50% - 16px);
+                           box-sizing: border-box;
+                           text-align: center;
+                           display: flex; 
+                           flex-direction: column; 
+                           justify-content: center; 
+                           align-items: center; 
+                           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                       }
+                       
+                       #Testimonials .info {
+                           font-size: 14px; 
+                           text-align: center; 
+                           margin-top: 8px; 
+                       }
+            
+            
+                   
+                       .footer {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        background-color: #000016; /* أو أي لون تريده */
+                        color: #fff;
+                    }
+                    
+                    .contact-info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-right: 20px;
+                    }
+                    
+                    .contact-info p {
+                        margin: 5px 0;
+                    }
+                    
+                    .social-icons {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+                    
+                    .social-icons a {
+                        margin-left: 10px;
+                        font-size: 1.5em;
+                        color: #fff;
+                    }
+                    
+                    .footer-title {
+                        font-size: 1em;
+                        text-align: center;
+                        color: #fff;
+                    }
+                    
+            
+            
+            
+            
+            
+                }
 
 @media (max-width:365px) {
     header {
