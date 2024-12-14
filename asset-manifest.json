@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.32f9d278.css",
+    "main.js": "/React-Portfolio/static/js/main.aded92f4.js",
+    "static/media/MovieMaze.png": "/React-Portfolio/static/media/MovieMaze.8ebdb2a959104fdc4e2c.png",
+    "static/media/GoMovies.png": "/React-Portfolio/static/media/GoMovies.11f5b26bb6c5a03c91b5.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/React-Portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/GamiFytech.png": "/React-Portfolio/static/media/GamiFytech.51ff16f6457dc1fef5bc.png",
+    "static/media/fontawesome-webfont.eot": "/React-Portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/React-Portfolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/React-Portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/React-Portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/backgroundLogo.jpg": "/React-Portfolio/static/media/backgroundLogo.0315df75924e04a0fbbc.jpg",
+    "index.html": "/React-Portfolio/index.html",
+    "main.32f9d278.css.map": "/React-Portfolio/static/css/main.32f9d278.css.map",
+    "main.aded92f4.js.map": "/React-Portfolio/static/js/main.aded92f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32f9d278.css",
+    "static/js/main.aded92f4.js"
+  ]
+}
