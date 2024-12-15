@@ -14,20 +14,11 @@ function Header({ isDarkMode, toggleDarkMode }) {
       </button>
 
       <nav className="navigation">
-        <a href="#">
-      <ScrollLink to="Services" >Services</ScrollLink></a>
-      <a href="#">
+      <ScrollLink to="Services" >Services</ScrollLink>
         <ScrollLink to="Skills" >Skills</ScrollLink>
-      </a>
-        <a href="#">
          <ScrollLink to="Projects" >Projects</ScrollLink>
-       </a>
-        <a href="#">
         <ScrollLink to="Testimonials" >Testimonials</ScrollLink>
-        </a>
-        <a href="#">
         <ScrollLink to="Highlight" >Highlight</ScrollLink>
-        </a>
         <Link to="/Contact">Contact</Link>
       </nav>
     </header>
