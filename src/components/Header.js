@@ -7,7 +7,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
 
   return (
     <header className={isDarkMode ? 'dark-mode' : ''}>
-      <a href="MainSection" className="logo">Moawiah Eqailan</a> 
+      <a href="https://moawiah-eqailan.github.io/React-Portfolio" className="logo">Moawiah Eqailan</a> 
       
       <button onClick={toggleDarkMode} className="dark-mode-toggle">
         <i className={isDarkMode ? 'fa fa-sun' : 'fa fa-moon'}></i>

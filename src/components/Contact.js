@@ -131,7 +131,7 @@ const Contact = () => {
                 </form>
             </div>
            <a 
-    href="MainSection" 
+    href="https://moawiah-eqailan.github.io/React-Portfolio/" 
     style={{ color: '#bec8cf', textDecoration: 'none' , fontSize:'16px'}}
 >
 <i className="fas fa-arrow-left"></i> Back To Home
