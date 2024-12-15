@@ -17,17 +17,14 @@ function App() {
   const location = useLocation();
   const [isDarkMode, toggleDarkMode] = useDarkMode();
 
-  // التحكم بعرض الـ Sidebar (الهيدر)
   const showSidebar = location.pathname !== '/contact' && location.pathname !== '/TermsAndConditions';
 
   return (
     <div className={isDarkMode ? 'dark-mode' : ''}>
-      {/* Sidebar أو الهيدر */}
       {showSidebar && <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />}
 
       <main>
         <Routes>
-          {/* الصفحة الرئيسية تعرض جميع الأقسام */}
           <Route path="/" element={
             <>
               <MainSection />
@@ -39,12 +36,10 @@ function App() {
             </>
           } />
           
-          {/* صفحة Contact منفصلة */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 
-      {/* الفوتر ثابت */}
       <Footer />
     </div>
   );
