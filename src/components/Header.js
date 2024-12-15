@@ -1,9 +1,8 @@
 import React from "react";
-import {  Link } from "react-router-dom"; 
+import { Link as ScrollLink } from "react-scroll"; // استيراد Link من مكتبة react-scroll
+import { Link } from "react-router-dom";
 
-function Header({ isDarkMode, toggleDarkMode }) {  
-
-
+function Header({ isDarkMode, toggleDarkMode }) {
   return (
     <header className={isDarkMode ? 'dark-mode' : ''}>
       <a href="/" className="logo">Moawiah Eqailan</a>
@@ -13,12 +12,12 @@ function Header({ isDarkMode, toggleDarkMode }) {
       </button>
 
       <nav className="navigation">
-        <a href="/#Services">Services</a>
-        <a href="/#Skills">Skills</a>
-        <a href="/#Projects">Projects</a>
-        <a href="/#Testimonials">Testimonials</a>
-        <a href="/#Highlight">Highlight</a>
-        <Link to="/Contact">Contact</Link> 
+        <ScrollLink to="Services" >Services</ScrollLink>
+        <ScrollLink to="Skills" >Skills</ScrollLink>
+        <ScrollLink to="Projects" >Projects</ScrollLink>
+        <ScrollLink to="Testimonials" >Testimonials</ScrollLink>
+        <ScrollLink to="Highlight" >Highlight</ScrollLink>
+        <Link to="/Contact">Contact</Link>
       </nav>
     </header>
   );
