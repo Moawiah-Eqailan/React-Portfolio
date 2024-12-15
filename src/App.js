@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import MainSection from "./components/MainSection";
 import ServicesSection from "./components/ServicesSection";
@@ -15,19 +15,22 @@ import useDarkMode from './hooks/useDarkMode';
 
 function App() {
   const location = useLocation();
-  const [isDarkMode, toggleDarkMode] = useDarkMode(); 
+  const [isDarkMode, toggleDarkMode] = useDarkMode();
 
+  // التحكم بعرض الـ Sidebar (الهيدر)
   const showSidebar = location.pathname !== '/contact' && location.pathname !== '/TermsAndConditions';
-  const showHome = location.pathname === '/';
 
   return (
-    <div className={isDarkMode ? 'dark-mode' : ''}> 
-      {showSidebar && <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />} 
+    <div className={isDarkMode ? 'dark-mode' : ''}>
+      {/* Sidebar أو الهيدر */}
+      {showSidebar && <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />}
+
       <main>
-        {showHome && <MainSection />}
         <Routes>
+          {/* الصفحة الرئيسية تعرض جميع الأقسام */}
           <Route path="/" element={
             <>
+              <MainSection />
               <ServicesSection />
               <Skills />
               <Projects />
@@ -35,9 +38,13 @@ function App() {
               <Highlight />
             </>
           } />
-          <Route path="/Contact" element={<Contact />} />
+          
+          {/* صفحة Contact منفصلة */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+
+      {/* الفوتر ثابت */}
       <Footer />
     </div>
   );
