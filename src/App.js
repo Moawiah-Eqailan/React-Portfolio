@@ -17,7 +17,7 @@ function App() {
   const location = useLocation();
   const [isDarkMode, toggleDarkMode] = useDarkMode();
 
-  const showSidebar = location.pathname !== '/contact' && location.pathname !== '/TermsAndConditions';
+  const showSidebar = location.pathname !== '/Contact' && location.pathname !== '/TermsAndConditions';
 
   return (
     <div className={isDarkMode ? 'dark-mode' : ''}>
@@ -36,7 +36,7 @@ function App() {
             </>
           } />
           
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </main>
 

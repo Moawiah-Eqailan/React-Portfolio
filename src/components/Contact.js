@@ -130,23 +130,13 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
-           {/* <Link 
-    to="/" 
-    style={{
-        display: "inline-block",
-        padding: "10px 20px",
-        backgroundColor: "#007BFF",
-        color: "#fff",
-        textDecoration: "none",
-        borderRadius: "5px",
-        fontWeight: "bold",
-        transition: "background-color 0.3s ease",
-    }}
-    onMouseEnter={(e) => (e.target.style.backgroundColor = "#0056b3")} 
-    onMouseLeave={(e) => (e.target.style.backgroundColor = "#007BFF")}
+           <a 
+    href="MainSection" 
+    style={{ color: '#bec8cf', textDecoration: 'none' , fontSize:'16px'}}
 >
-    Back To Home
-</Link> */}
+<i className="fas fa-arrow-left"></i> Back To Home
+</a>
+
 <br/>
 <br/>
 <br/>
