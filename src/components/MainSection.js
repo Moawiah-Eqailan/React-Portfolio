@@ -10,7 +10,6 @@ function MainSection() {
         <div>
           <h2>Hello, I'm Moawiah Eqailan<br /><span>Software Engineer</span></h2>
           <h3>I'm a Full Stack</h3>
-          {/* <a href="https://moawiah-eqailan.github.io/React-Portfolio/Projects" className="main-btn">View my work</a> */}
           <a href="">
          <ScrollLink to="Projects" className="main-btn">View my work</ScrollLink>
         </a>

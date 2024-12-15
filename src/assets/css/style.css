@@ -29,10 +29,14 @@
 .dark-mode #Highlight  {
     background-color: #000016; 
 }
-.dark-mode #Contact .contact-form {
-    background-color: #f0f0f0; 
+.dark-mode #Contact .contact-form ,.con-back{
+    background-color: #000016; 
 }
 
+
+.dark-mode .card-contact ,form{
+    background-color: #f0f0f0; 
+  }
 
 
   
@@ -50,11 +54,7 @@
     color: #000016; 
   }
   
-  .dark-mode .contact-info p{
-    background-color: #f0f0f0; 
-    color: #000016; 
-  }
-  
+
 
 
   .dark-mode-toggle {
@@ -462,6 +462,11 @@ iframe {
 
 
 /************ Contact Form *************/
+
+
+.error {
+    color: red;
+}
 
 .contact-form {
     background-color: #000016;

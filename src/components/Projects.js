@@ -20,7 +20,6 @@ function Projects() {
         <section id="Projects">
             <h2 className="title">Projects</h2>
             <div className="content">
-                {/* Go Movies Project */}
                 <div className="Projects-card">
                     <div className="Projects-img">
                         <img src={GoMovies} alt="Go Movies Project" />
@@ -46,7 +45,6 @@ function Projects() {
                     </div>
                 </div>
 
-                {/* Gami Fytech Project */}
                 <div className="Projects-card">
                     <div className="Projects-img">
                         <img src={GamiFytech} alt="Gami Fytech Project" />
@@ -72,7 +70,6 @@ function Projects() {
                     </div>
                 </div>
 
-                {/* Movie Maze Project */}
                 <div className="Projects-card">
                     <div className="Projects-img">
                         <img src={MovieMaze} alt="Movie Maze Project" />

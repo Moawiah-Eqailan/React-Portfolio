@@ -3,7 +3,6 @@ import Swal from "sweetalert2";
 import emailjs from '@emailjs/browser';
 import { Link } from "react-router-dom";
 
-
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: "",
@@ -13,7 +12,13 @@ const Contact = () => {
         message: "",
     });
 
-    const form = useRef(null);  
+    const [errors, setErrors] = useState({
+        name: "",
+        email: "",
+        phone: "",
+    });
+
+    const form = useRef(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -23,8 +28,36 @@ const Contact = () => {
         }));
     };
 
+    const validateForm = () => {
+        let valid = true;
+        let errorMessages = { name: "", email: "", phone: "" };
+
+        if (formData.name.length < 3) {
+            errorMessages.name = "Name must be longer than 2 characters.";
+            valid = false;
+        }
+
+        if (formData.phone.length < 10 || formData.phone.length > 15) {
+            errorMessages.phone = "Phone number must be between 10 and 15 digits.";
+            valid = false;
+        }
+
+        if (formData.email.length < 10 || formData.email.length > 70) {
+            errorMessages.email = "Email must be between 10 and 70 characters.";
+            valid = false;
+        }
+
+        setErrors(errorMessages);  
+
+        return valid;
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if (!validateForm()) {
+            return; 
+        }
 
         emailjs
         .sendForm(
@@ -42,8 +75,7 @@ const Contact = () => {
                         confirmButtonText: "OK",
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            
-                            window.location.href = "/"; 
+                             window.location.href = "https://moawiah-eqailan.github.io/React-Portfolio/"; 
                         }
                     });
 
@@ -81,6 +113,8 @@ const Contact = () => {
                             onChange={handleChange}
                             className="form-input"
                         />
+                        {errors.name && <p className="error">{errors.name}</p>}  
+                        
                         <input
                             type="email"
                             required
@@ -90,18 +124,22 @@ const Contact = () => {
                             onChange={handleChange}
                             className="form-input"
                         />
+                        {errors.email && <p className="error">{errors.email}</p>}  
                     </div>
 
                     <div className="form-row">
-                        <input
-                            type="text"
-                            required
-                            name="phone"
-                            placeholder="Phone Number"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            className="form-input"
-                        />
+    <input
+        type="text"
+        required
+        name="phone"
+        placeholder="Phone Number"
+        value={formData.phone}
+        onChange={handleChange}
+        className="form-input"
+        pattern="[0-9]*"  
+    />
+    {errors.phone && <p className="error">{errors.phone}</p>}
+
                         <input
                             type="text"
                             required
@@ -130,21 +168,21 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
-           <a 
-    href="https://moawiah-eqailan.github.io/React-Portfolio/" 
-    style={{ color: '#bec8cf', textDecoration: 'none' , fontSize:'16px'}}
->
-<i className="fas fa-arrow-left"></i> Back To Home
-</a>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+            <a className="con-back"
+                href="https://moawiah-eqailan.github.io/React-Portfolio/" 
+                style={{ color: '#bec8cf', textDecoration: 'none', fontSize: '16px ', padding:'12px' }}
+            >
+                <i className="fas fa-arrow-left"></i> Back To Home
+            </a>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </section>   
-        
     );
 };
 
