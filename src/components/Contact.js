@@ -43,7 +43,7 @@ const Contact = () => {
                     }).then((result) => {
                         if (result.isConfirmed) {
                             
-                            window.location.href = "/"; 
+                            window.location.href = "#"; 
                         }
                     });
 
@@ -130,7 +130,7 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
-           {/* <Link 
+           <Link 
     to="/" 
     style={{
         display: "inline-block",
@@ -146,7 +146,7 @@ const Contact = () => {
     onMouseLeave={(e) => (e.target.style.backgroundColor = "#007BFF")}
 >
     Back To Home
-</Link> */}
+</Link>
 <br/>
 <br/>
 <br/>
