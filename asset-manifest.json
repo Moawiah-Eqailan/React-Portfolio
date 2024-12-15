@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.c139d339.css",
-    "main.js": "/React-Portfolio/static/js/main.96ec395b.js",
+    "main.js": "/React-Portfolio/static/js/main.ecfd81b0.js",
     "static/media/MovieMaze.png": "/React-Portfolio/static/media/MovieMaze.8ebdb2a959104fdc4e2c.png",
     "static/media/GoMovies.png": "/React-Portfolio/static/media/GoMovies.11f5b26bb6c5a03c91b5.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/React-Portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -13,10 +13,10 @@
     "static/media/backgroundLogo.jpg": "/React-Portfolio/static/media/backgroundLogo.0315df75924e04a0fbbc.jpg",
     "index.html": "/React-Portfolio/index.html",
     "main.c139d339.css.map": "/React-Portfolio/static/css/main.c139d339.css.map",
-    "main.96ec395b.js.map": "/React-Portfolio/static/js/main.96ec395b.js.map"
+    "main.ecfd81b0.js.map": "/React-Portfolio/static/js/main.ecfd81b0.js.map"
   },
   "entrypoints": [
     "static/css/main.c139d339.css",
-    "static/js/main.96ec395b.js"
+    "static/js/main.ecfd81b0.js"
   ]
 }
